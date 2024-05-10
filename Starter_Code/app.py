@@ -1,6 +1,4 @@
 # Import the dependencies
-
-
 from flask import Flask, jsonify
 
 # Other necessary imports
@@ -11,7 +9,7 @@ from sqlalchemy import create_engine, func
 
 # Database Setup
 # Create engine to hawaii.sqlite
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///C:/Users/nduag/OneDrive/Documents/data boot camp/sqlalchemy-challenge/sqlalchemy-challenge/Starter_Code/Resources/hawaii.sqlite")
 
 # Reflect an existing database into a new model
 Base = automap_base()
@@ -67,3 +65,6 @@ def start_end_date(start, end):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
